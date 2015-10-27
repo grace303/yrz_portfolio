@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.work_header {
+    color: #BCBCBC;
+    width: 55%;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+    inline-height: 1em;
+}
+.work_header:before,
+.work_header:after {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    width: 60%;
+    border-bottom: 2px dotted #BCBCBC;
+    margin: 0 8% 0 -55%;
+}
+.work_header:after {
+    margin: 0 -55% 0 8%;
+}
+h1 span {
+    font-size: 0.8em;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: "Arial Narrow", Arial, serif;
+    font-weight: normal;
+}
+.top_header {
+    font-size: 1em;
+    color: #777777;
+}
+.my_work {
+    background: white;
+    margin: auto 22.5%;
+    width: 55%;
+}
+.my_work img {
+    width: 100%;
+    margin-bottom: 10px;
+}

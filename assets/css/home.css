@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/*map and slider*/
+
+.map {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40px;
+}
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    30% {
+        left: -100%;
+    }
+    50% {
+        left: -100%;
+    }
+    60% {
+        left: -200%;
+    }
+    80% {
+        left: -200%;
+    }
+    100% {
+        left: -300%;
+    }
+}
+div#slider {
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+div#slider figure img {
+    width: 25%;
+    float: left;
+}
+div#slider figure {
+    position: absolute;
+    top: 40px;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 10s slidy infinite;
+}
+@media screen and (min-width: 500px) {
+    .map {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50px;
+    }
+    div#slider figure {
+        position: absolute;
+        top: 50px;
+    }
+}
+/*slogan and self-intro*/
+
+#home_word {
+    margin-top: 30%;
+}
+.slogan {
+    color: #86CDF8;
+    text-align: center;
+    font-size: 3.2em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.introduction {
+    text-align: center;
+    color: grey;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+}
+/*four images*/
+
+#work_wrapper {
+    width: 60%;
+    margin: 10% auto;
+}
+#work_columns {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-fill: auto;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+}
+.pin {
+    display: block;
+    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    background: linear-gradient(45deg, #F5F5F5, #FCFCFC);
+    opacity: 5;
+    width: 100%;
+}
+.pin a img {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+}
+@media screen and (min-width: 500px) {
+    #work_columns {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-fill: auto;
+        -webkit-column-fill: auto;
+        -moz-column-fill: auto;
+    }
+    #work_wrapper {
+        width: 80%;
+        margin: 10% auto;
+    }
+}

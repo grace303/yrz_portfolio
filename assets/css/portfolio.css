@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+}
+body {
+    background-color: white;
+}
+/*navigation bar*/
+
+nav {
+    background-color: #313134;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    float: right;
+    text-align: center;
+}
+a:link,
+a:visited {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    font-family: Times;
+    font-size: 1.5em;
+    padding: 15px;
+}
+a:hover,
+a:active {
+    color: #86CDF8;
+}
+#logo {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    height: 30px;
+}
+/*media querysmallest*/
+
+body {
+    font-size: 50%;
+}
+/*media query width>500px*/
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size: 60%;
+    }
+    nav {
+        height: 50px;
+    }
+    #logo {
+        height: 40px;
+    }
+}
+/*media query width>800px*/
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 70%;
+    }
+}
+/*footer*/
+
+footer {
+    position: relative;
+    bottom: 0px;
+    background-color: #313134;
+    width: 100%;
+}
+#linkedin {
+    padding: 0;
+}
